@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:text="Selecione o número de faces do dado:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinner_faces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Selecione a quantidade de dados:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group_dados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_um_dado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Dado"/>
+
+            <RadioButton
+                android:id="@+id/radio_dois_dados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Dados"/>
+
+            <RadioButton
+                android:id="@+id/radio_tres_dados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Dados"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_jogar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogar Dados" />
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
